@@ -1,0 +1,235 @@
+
+      
+      body{
+        background: #fafafa ;
+        --claro: #94CDD6;
+        --oscuro: #1A5B6D;
+      }
+      *{
+        font-family: 'Miriam Libre', sans-serif;
+      }
+      h1, h2, h3{
+        color: var(--claro);
+        text-align: center;
+      }
+      
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--claro);
+      }
+      
+      a:hover{
+        color:var(--oscuro);
+        text-decoration: underline;
+        
+      }
+      
+        *{
+          box-sizing: border-box;
+        }
+
+        body{
+          margin: 0;
+        }
+
+        .anchototal{
+          width: 100%;
+        }
+
+        .contenedor{
+          margin: 0 20px;
+        }
+
+        img{
+          width: 100%;
+        }
+
+        nav{
+            top: 0;
+          left: 0;
+          text-align: center;
+          background: var(--oscuro);
+          position: fixed;
+        }
+        
+        nav a{
+          padding: 10px;
+        }
+        nav a:hover{
+          color: white;
+        }
+      
+        #logo{
+          width: 56px;
+          float: left;
+        }
+      
+        header img{
+          width: 120px;
+          box-shadow: 0 2px 6px black;
+          border-radius: 50%;
+        }
+      
+        section{
+          padding-top: 80px;
+        }
+      
+        footer{
+          padding: 10px 0;
+          background: var(--oscuro);
+          text-align: center;
+          margin-top: 40px;
+        }
+      
+        footer a{
+          padding: 10px;
+        }
+      
+       footer a:hover{
+          color:white;
+        }
+        input[type='submit']{
+            padding: 5px 20px;
+            color: var(--claro);
+            border-radius: 5px;
+            background: var(--oscuro);
+            border:none;
+          }
+      
+        input, textarea{
+          font-size: 1rem;
+          color: var(--oscuro);
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+        
+        
+      
+        input[type='submit']:hover{
+            color: white;
+            box-shadow: 0 2px 6px black; 
+          }
+      
+      .S-oculto{
+        display: none;
+      }
+  
+    
+      @media screen and (min-width:600px){
+        body{
+          color: #444; 
+        }
+        
+        h1, h2, h3{
+          margin-top: 0; 
+        }
+        
+        h1{
+          font-size: 3.3rem;
+        }
+        
+        h2{
+          font-size: 2.5rem;
+        }
+        
+        h3{
+          font-size: 1.7rem;
+          text-align: left;
+        }
+
+        .M-mitad{
+          width: 50%;
+          float: left;
+          padding: 10px;
+        }
+        
+        .L-tercio{
+          overflow: hidden;
+        }
+        nav{
+          padding: 5px;
+          z-index: 5; 
+        }
+        
+        nav a{
+          font-size: 1.5rem; 
+        }
+        
+        header{
+            top: 40vw;
+          width: 100%;      
+          text-shadow:0 2px 6px black; 
+          position: absolute;
+        }        
+      }
+     
+      @media screen and (min-width: 1000px){
+        
+        .M-mitad{
+          width: 100%;
+          float: none;
+          padding: 0;
+        }
+        .contenedor{
+            max-width: 1400px;
+            margin: auto;
+            overflow: hidden;
+          }
+        
+        .L-mitad{
+          width: 50%;
+          float: left;
+          padding: 20px;
+        }
+        
+        .L-tercio{
+        float: left;
+        padding: 20px;
+        width: 33.3%;
+          
+        }
+        
+        .derecha{
+          float: right;
+        }
+        
+        .izquierda{
+          float:left; 
+        } 
+        
+        .L-oculto{
+          display: none;
+        }
+        .player{
+            position: relative;
+            overflow:hidden;
+            height: 0;
+            padding-bottom: 56.25%; 
+          }
+        
+        .S-oculto{
+          display: block;
+        }
+    
+        .player iframe{
+          position: absolute;
+          top:0;
+          width: 100%;
+          height: 100%;
+          left:0;
+          
+        }
+
+        nav{
+          padding-top: 20px;
+        }
+        
+        #logo{
+          width: 32px;
+        }
+        
+        header{
+          top: 30vw;
+        }
+    }
